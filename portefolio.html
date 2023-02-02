@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mon Portfolio</title>
+    <style>
+      /* Mettre ici les styles pour le site */
+      .header {
+        text-align: center;
+        padding: 30px;
+      }
+
+      .header h1 {
+        font-size: 48px;
+        font-weight: bold;
+      }
+
+      .header p {
+        font-size: 18px;
+        padding-bottom: 30px;
+      }
+
+      .services {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px;
+      }
+
+      .service {
+        width: 30%;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 1s;
+      }
+
+      .service h2 {
+        font-size: 36px;
+        font-weight: bold;
+        padding-bottom: 20px;
+      }
+
+      .service p {
+        font-size: 18px;
+        padding-bottom: 30px;
+      }
+
+      .show {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Bienvenue sur mon portfolio</h1>
+      <p>Je suis une développeuse web passionnée et voici quelques-uns de mes travaux</p>
+    </div>
+
+    <div class="services">
+      <div class="service">
+        <h2>Projet 1</h2>
+        <p>Description du projet 1</p>
+      </div>
+
+      <div class="service">
+        <h2>Projet 2</h2>
+        <p>Description du projet 2</p>
+      </div>
+
+      <div class="service">
+        <h2>Projet 3</h2>
+        <p>Description du projet 3</p>
+      </div>
+    </div>
+
+    <script>
+      // Ajouter une classe 'show' pour faire apparaître les éléments avec un fondu
+      const services = document.querySelectorAll(".service");
+      let i = 0;
+      const showServices = () => {
+        services[i].classList.add("show");
+        i++;
+        if (i < services.length) {
+          setTimeout(showServices, 500);
+        }
+      };
+
+      showServices();
+    </script>
+  </body>
+</html>
