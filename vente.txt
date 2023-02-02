@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Services en vente</title>
+    <style>
+      /* Mettre ici les styles pour le site */
+      .header {
+        text-align: center;
+        padding: 30px;
+      }
+
+      .header h1 {
+        font-size: 48px;
+        font-weight: bold;
+      }
+
+      .header p {
+        font-size: 18px;
+        padding-bottom: 30px;
+      }
+
+      .services {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px;
+      }
+
+      .service {
+        width: 30%;
+        text-align: center;
+        padding-bottom: 30px;
+      }
+
+      .service h2 {
+        font-size: 36px;
+        font-weight: bold;
+        padding-bottom: 20px;
+      }
+
+      .service p {
+        font-size: 18px;
+        padding-bottom: 30px;
+      }
+
+      .form {
+        width: 50%;
+        margin: 50px auto;
+        text-align: left;
+      }
+
+      .form label {
+        font-size: 18px;
+        display: block;
+        padding-bottom: 10px;
+      }
+
+      .form input,
+      .form select,
+      .form textarea {
+        font-size: 18px;
+        padding: 10px;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .form input[type="submit"] {
+        background-color: blue;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100px;
+        margin-left: auto;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Services en vente</h1>
+      <p>Choisissez le service que vous voulez commander et remplissez le formulaire ci-dessous</p>
+    </div>
+
+    <div class="services">
+      <div class="service">
+        <h2>Service 1</h2>
+        <p>Description du service 1</p>
+      </div>
+
+      <div class="service">
+        <h2>Service 2</h2>
+        <p>Description du service 2</p>
+      </div>
+
+      <div class="service">
+        <h2>Service 3</h2>
+        <p>Description du service 3</p>
+      </div>
+    </div>
+
+    <form class="form" action="#" method="post">
+      <label>Nom complet:</label>
+      <input type="text" name="full-name" required>
+
+      <label>Adresse électronique:</label>
+      <input type="email" name="email" required>
+
+      <label>Téléphone:</label>
+      <input type="tel" name="phone">
+    </form>
+  </body>
+</html>
+
